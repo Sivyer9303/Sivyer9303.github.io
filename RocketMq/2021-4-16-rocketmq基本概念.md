@@ -1,8 +1,8 @@
-### RocketMq基本概念
+## RocketMq基本概念
 
-#### RocketMq组成部分
+### RocketMq组成部分
 
-##### 生产者
+#### 生产者
 
 生产者是指RocketMq中的消息生产的部分，是消息的起点。
 
@@ -34,7 +34,7 @@ hash：由MessageQueueSelector接口的子类SelectMessageQueueByHash来实现�
 
 
 
-##### 消费者
+#### 消费者
 
 消费者是指RocketMq中实际进行消息消费的部分，可以是集群，也可以是单机。
 
@@ -58,3 +58,56 @@ push模式：添加消息监听器即可。
 
 在生产者发送顺序消息后，消费者只需添加顺序消息监听器即可，因为消费者在启动完成后，会根据现有消费者数量和message queue数量，进行message queue和消费者的匹配，每个message queue会对应一个消费者，一个消费者可以对应多个message queue。
 
+
+
+#### 主题(topic)
+
+每条消息都必须跟一个topic进行绑定，topic是消息订阅的基本单位。
+
+topic创建分为两种方式，一种是预先创建，一种是自动创建，可以通过修改配置来决定选用哪种方式。
+
+topic保存在namesrv中，生产者和消费者会在本机保存一份缓存的数据。
+
+有一些topic是在正常创建以后自带的，比如重试队列，重试队列的topic为%RETRY% + 消费组名。比如死信队列，死信队列的topic为%DLQ% + 消费组名，两者均与消费组进行绑定。
+
+###### 特殊的topic-TBW102 
+
+当broker开启了自动创建topic，且topic在发送时仍未创建，就会使用TBW102作为topic的父类，让新创建的topic使用TBW102的配置。
+
+###### topic分片
+
+RocketMq中，topic是支持分片的，可以将topic下的queue均匀的分布到每个Broker,例如，现有4个broker，16个queue，那么就可以分给每个broker4个queue。
+
+
+
+#### Broker Server
+
+消息中转角色，负责存储消息、转发消息。Broker在RocketMQ系统中负责接收从生产者发送来的消息并存储、同时为消费者的拉取请求作准备。Broker也存储消息相关的元数据，包括消费者组、消费进度偏移和主题和队列消息等。 
+
+
+
+#### NameServer
+
+名称服务充当路由消息的提供者。生产者或消费者能够通过名字服务查找各主题相应的Broker IP列表。多个Namesrv实例组成集群，但相互独立，没有信息交换。
+
+当Broker启动时，会将当前Broker所管理的topic信息发送至NameServer。
+
+##### 心跳
+
+NameServer与生产者、消费者、Broker通过心跳进行关联，当Broker出现问题，NameServer中会更新topic和Broker的关系，避免将消息发送至失效的Broker，但NameServer不会通知生产者和消费者，生产者和消费者会通过接口获取topic信息，若发送到某个Broker失败时，会尝试其他Broker或者从NameServer重新拉取topic信息。
+
+每个Broker会与每个NameServer都采用长连接方式保持心跳。
+
+生产者和消费者会随机选取一个NaemServer保持心跳。
+
+同时，生产者会与每个主Broker保持心跳，消费者会与主Broker和从Broker保持心跳。
+
+
+
+### 标签（tag）
+
+每个消息都可以绑定若干个tag，tag通过||分隔开。消费者消费topic时，可以通过tag来将topic分类，例如，存在一个交通工具的topic，可以使用tag来进行区分汽车、火车这些。tag不是必须要使用的。
+
+参考资料
+
+https://github.com/apache/rocketmq/blob/master/docs/cn/concept.md
