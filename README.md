@@ -24,7 +24,6 @@
   - [ ] 分布式锁
   - [ ] redis限流
   - [ ] 高可用设计
-  
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-04-16-rocketmq基本概念.md)
@@ -36,21 +35,15 @@
   - [ ] 消息重试
   - [ ] 主从复制
   - [ ] 高可用设计
-
 - Zookeeper
 
   - [ ] 脑裂问题
   - [ ] 羊群效应
   - [ ] 分布式锁
-
 - Kafka
-
 - Es
-
 - Netty
-
 - Mysql
-
 - Spring
-
+- python学习笔记
 - 书籍阅读
