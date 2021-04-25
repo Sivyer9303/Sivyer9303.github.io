@@ -45,5 +45,4 @@
 - Netty
 - Mysql
 - Spring
-- python学习笔记
 - 书籍阅读
