@@ -41,10 +41,11 @@
   - [ ] 羊群效应
   - [ ] 分布式锁
 - Kafka
+- mongodb
 - Es
 - Netty
 - Mysql
 - Spring
 - K8S和Docker
 - 书籍阅读
- 
+
