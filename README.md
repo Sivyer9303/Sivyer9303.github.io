@@ -53,6 +53,7 @@
   - [ ] 使用Consul作为SpringCloud的事件分发中心-与SpringCloud Bus协作
   - [ ] Consul定制
   - [ ] Consul密码及权限控制
+  - [ ] 尝试搭建Consul集群
 - K8S和Docker
 - 书籍阅读
 
