@@ -46,6 +46,9 @@
 - Netty
 - Mysql
 - Spring
+- Consul
+  - [ ] 安装
+  - [ ] 使用springCloud连接Consul
 - K8S和Docker
 - 书籍阅读
 
