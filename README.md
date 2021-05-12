@@ -46,6 +46,7 @@
 - Netty
 - Mysql
 - Spring
+  - [ ] 事务监听器使用 - TransactionalEventListener
 - openresty
 - fabio
 - Consul
