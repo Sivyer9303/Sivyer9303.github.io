@@ -46,6 +46,8 @@
 - Netty
 - Mysql
 - Spring
+- openresty
+- fabio
 - Consul
   - [ ] 安装
   - [ ] 使用Consul作为SpringCloud的注册发现服务-替换Euraka
