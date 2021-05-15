@@ -53,7 +53,7 @@
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
 - protocol buffers
 - linux
-  - [ ] [某些有意思或者常用但难记的命令](./linux/2021-05-12-某些有意思或者常用但难记的命令.md)
+  - [ ] [某些有意思或者常用但难记的命令](./linux/2021-05-12-Linux命令.md)
 - Consul
   - [ ] 安装
   - [ ] 使用Consul作为SpringCloud的注册发现服务-替换Euraka
