@@ -48,7 +48,6 @@
 - Spring
   - [ ] 事务监听器使用 - TransactionalEventListener
 - openresty
-- fabio
 - gRPC
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
 - protocol buffers
@@ -63,6 +62,7 @@
   - [ ] Consul密码及权限控制
   - [ ] 尝试搭建Consul集群
   - [ ] [与其他服务注册中心对比](./Consul/2021-05-18-各服务注册中心对比.md)
+  - [ ] 与Fabio一起使用
 - K8S和Docker
 - 一致性算法
   - [ ] [一致性协议总览](./一致性协议/2021-05-19-一致性协议总览.md)
