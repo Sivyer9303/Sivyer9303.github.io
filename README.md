@@ -47,6 +47,8 @@
 - Mysql
 - Spring
   - [ ] 事务监听器使用 - TransactionalEventListener
+  - [x] [SpringBootApplication注解背后的秘密](./Spring/2021-05-25-SpringBootApplication背后的秘密.md)
+  - [ ] 自动装配
 - openresty
 - gRPC
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
