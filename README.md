@@ -79,6 +79,6 @@
   - [x] [2PC与3PC](./分布式事务/2021-05-20-2PC与3PC.md)
   - [ ] seata
 - 其他
-  - [ ] selector-epoll
+  - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
 - 书籍阅读
 
