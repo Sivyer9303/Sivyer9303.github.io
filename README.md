@@ -15,7 +15,7 @@
   - [ ] 类加载机制
   - [ ] 堆外内存
   - [ ] jvm内存模型
-  - [ ] aqs
+  - [ ] [aqs](./jvm/2021-05-27-aqs.md)
 - Redis
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
   - [ ] Redis持久化
