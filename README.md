@@ -46,6 +46,7 @@
 - Es
 - Netty
 - Mysql
+  - [ ] 游标cursor
 - Spring
   - [ ] 事务监听器使用 - TransactionalEventListener
   - [x] [SpringBootApplication注解背后的秘密](./Spring/2021-05-25-SpringBootApplication背后的秘密.md)
