@@ -16,6 +16,7 @@
   - [ ] 堆外内存
   - [ ] jvm内存模型
   - [ ] [aqs](./jvm/2021-05-27-aqs.md)
+  
 - Redis
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
   - [ ] Redis持久化
@@ -26,6 +27,7 @@
   - [ ] 分布式锁
   - [ ] redis限流
   - [ ] 高可用设计
+  
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
@@ -37,26 +39,46 @@
   - [ ] 消息重试
   - [ ] 主从复制
   - [ ] 高可用设计
+  
 - Zookeeper
   - [ ] 脑裂问题
   - [ ] 羊群效应
   - [ ] 分布式锁
+  
 - Kafka
+
 - mongodb
+
 - Es
+
 - Netty
+
 - Mysql
+  
   - [ ] 游标cursor
+  
+- dubbo
+  
+  //TODO
+  
 - Spring
+  
   - [ ] 事务监听器使用 - TransactionalEventListener
   - [x] [SpringBootApplication注解背后的秘密](./Spring/2021-05-25-SpringBootApplication背后的秘密.md)
   - [ ] [自动装配](./Spring/2021-05-25-自动装配.md)
+  
 - openresty
+
 - gRPC
+  
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
+  
 - protocol buffers
+
 - linux
+  
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
+  
 - Consul
   - [ ] 安装
   - [ ] 使用Consul作为SpringCloud的注册发现服务-替换Euraka
@@ -67,20 +89,26 @@
   - [ ] 尝试搭建Consul集群
   - [x] [与其他服务注册中心对比](./Consul/2021-05-18-各服务注册中心对比.md)
   - [ ] 与Fabio一起使用
+  
 - K8S和Docker
+  
   - [ ] [k8s有哪些组件](./k8s/2021-05-24-k8s有哪些组件.md)
+  
 - 一致性算法
   - [x] [一致性协议总览](./一致性协议/2021-05-19-一致性协议总览.md)
   - [x] [Paxos协议](./一致性协议/2021-05-19-Paxos协议.md)
   - [x] [Raft协议](./一致性协议/2021-05-19-Raft协议.md)
   - [x] [ZAB协议](./一致性协议/2021-05-19-ZAB协议.md)
   - [x] [Gossip协议](./一致性协议/2021-05-22-Gossip协议.md)
+  
 - 分布式事务
   - [x] [一致性](./分布式事务/2021-05-20-一致性.md)
   - [x] [2PC与3PC](./分布式事务/2021-05-20-2PC与3PC.md)
   - [ ] seata
+  
 - 其他
   - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
   - [ ] dataX
+  
 - 书籍阅读
 
