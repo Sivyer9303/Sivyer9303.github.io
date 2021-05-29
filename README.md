@@ -20,7 +20,11 @@
 - Redis
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
   - [x] [Redis持久化](./Redis/2021-05-25-Redis持久化.md)
-  - [ ] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
+  - [x] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
+  - [ ] 哨兵模式 //TODO
+  - [ ] 集群模式 //TODO
+  - [ ] Redis中的事件
+  - [ ] Redis的IO多路复用
   - [ ] redis为什么高效
   - [ ] 缓存雪崩、缓存穿透、缓存击穿
   - [ ] 一致性hash
