@@ -19,8 +19,8 @@
   
 - Redis
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
-  - [ ] Redis持久化
-  - [ ] 持久化与主从同步
+  - [x] [Redis持久化](./Redis/2021-05-25-Redis持久化.md)
+  - [ ] 主从同步
   - [ ] redis为什么高效
   - [ ] 缓存雪崩、缓存穿透、缓存击穿
   - [ ] 一致性hash
@@ -56,6 +56,7 @@
 - Mysql
   
   - [ ] 游标cursor
+  - [ ] 执行计划
   
 - dubbo
   
