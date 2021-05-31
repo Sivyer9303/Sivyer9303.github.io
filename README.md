@@ -23,7 +23,7 @@
   - [x] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
   - [ ] 哨兵模式 //TODO
   - [ ] 集群模式 //TODO
-  - [ ] [Redis中的事件](./Redis/2021-05-30-Redis事件.md) //TODO
+  - [ ] [Redis中的事件](./Redis/2021-05-30-Redis事件.md)
   - [ ] Redis的IO多路复用
   - [ ] redis为什么高效
   - [ ] 缓存雪崩、缓存穿透、缓存击穿
