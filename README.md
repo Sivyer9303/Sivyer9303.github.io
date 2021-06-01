@@ -23,12 +23,11 @@
   - [x] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
   - [ ] 哨兵模式 //TODO
   - [ ] 集群模式 //TODO
-  - [ ] [Redis中的事件](./Redis/2021-05-30-Redis事件.md) 
-  - [ ] Redis的IO多路复用
+  - [x] [Redis中的事件](./Redis/2021-05-30-Redis事件.md) 
   - [ ] redis为什么高效
   - [ ] 缓存雪崩、缓存穿透、缓存击穿
-  - [ ] [一致性hash](./Redis/2021-05-31-一致性hash.md)
-  - [ ] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
+  - [x] [一致性hash](./Redis/2021-05-31-一致性hash.md)
+  - [x] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
   - [ ] 高可用设计
