@@ -21,7 +21,7 @@
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
   - [x] [Redis持久化](./Redis/2021-05-25-Redis持久化.md)
   - [x] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
-  - [ ] 哨兵模式 //TODO
+  - [ ] 哨兵模式
   - [ ] 集群模式 //TODO
   - [x] [Redis中的事件](./Redis/2021-05-30-Redis事件.md) 
   - [ ] redis为什么高效
