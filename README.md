@@ -30,8 +30,7 @@
   - [x] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
-  - [ ] 高可用设计
-  
+    
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
