@@ -21,16 +21,15 @@
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
   - [x] [Redis持久化](./Redis/2021-05-25-Redis持久化.md)
   - [x] [主从复制](./Redis/2021-05-29-Redis主从复制.md)
-  - [ ] [哨兵模式](./Redis/2021-06-01-Redis哨兵模式.md)
-  - [ ] [集群模式](./Redis/2021-06-03-Redis集群.md)
+  - [x] [哨兵模式](./Redis/2021-06-01-Redis哨兵模式.md)
+  - [x] [集群模式](./Redis/2021-06-03-Redis集群.md)
   - [x] [Redis中的事件](./Redis/2021-05-30-Redis事件.md) 
-  - [ ] redis为什么高效
+  - [ ] [redis为什么高效](./Redis/2021-06-04-Redis高效原因.md)
   - [ ] 缓存雪崩、缓存穿透、缓存击穿
   - [x] [一致性hash](./Redis/2021-05-31-一致性hash.md)
   - [x] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
-    
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
