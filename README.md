@@ -30,6 +30,7 @@
   - [x] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
+  
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
@@ -93,6 +94,13 @@
   - [ ] 尝试搭建Consul集群
   - [x] [与其他服务注册中心对比](./Consul/2021-05-18-各服务注册中心对比.md)
   - [ ] 与Fabio一起使用
+  
+- nacos
+  
+  - [ ] nacos是什么
+  - [ ] nacos的相关概念
+  - [ ] nacos与Spring cloud集成
+  - [ ] nacos权限控制
   
 - K8S和Docker
   
