@@ -97,6 +97,7 @@
   
 - nacos
   
+  - [ ] 搭建nacos
   - [ ] nacos是什么
   - [ ] nacos的相关概念
   - [ ] nacos与Spring cloud集成
