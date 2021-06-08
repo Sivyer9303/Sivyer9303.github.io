@@ -73,7 +73,8 @@
   - [ ] [自动装配](./Spring/2021-05-25-自动装配.md)
   
 - openresty
-
+ 
+- mybatis-plus (baomidou)
 - gRPC
   
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
