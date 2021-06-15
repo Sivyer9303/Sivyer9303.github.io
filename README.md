@@ -82,6 +82,8 @@
   
 - protocol buffers
 
+- xxlJob
+
 - linux
   
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
