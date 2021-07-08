@@ -130,9 +130,8 @@
 
 
 ### Golang
+ [变量](https://github.com/Sivyer9303/goStudy)
 
-- [ ] [变量](./golang/2021-07-08-变量.md)
-- [ ] 指针
 
 
 
