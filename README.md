@@ -127,6 +127,7 @@
   - [x] [一致性](./分布式事务/2021-05-20-一致性.md)
   - [x] [2PC与3PC](./分布式事务/2021-05-20-2PC与3PC.md)
   - [ ] seata
+    - [ ] [坑爹，tinyint被转换为布尔](./seata/记一次坑爹的线上bug - tinyint被转换为布尔.md)
   
 - 其他
   - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
