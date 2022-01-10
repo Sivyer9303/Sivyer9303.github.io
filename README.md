@@ -94,6 +94,7 @@
 - linux
   
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
+  - [ ] [namespace和cgroup](./k8s/2022-01-10-NameSpace和Cgroup.md)    -- TODO
   
 - Consul
   - [ ] 安装
