@@ -91,6 +91,10 @@
 
 - xxlJob
 
+- prometheus
+
+  - [ ] [结合springboot、nacos学习prometheus](./prometheus/2022-01-20-结合springboot、nacos学习prometheus.md)
+
 - linux
   
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
