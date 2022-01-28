@@ -93,7 +93,8 @@
 
 - prometheus
 
-  - [ ] [结合springboot、nacos学习prometheus](./prometheus/2022-01-20-结合springboot、nacos学习prometheus.md)
+  - [x] [结合springboot、nacos学习prometheus](./prometheus/2022-01-20-结合springboot、nacos学习prometheus.md)
+  - [ ] [go中的prometheus](./prometheus/2022-01-20-go中的prometheus.md)
 
 - linux
   
@@ -116,6 +117,8 @@
   - [ ] [nacos的相关概念](./Nacos/2021-06-07-nacos基本概念.md)
   - [ ] nacos与Spring cloud集成
   - [ ] nacos权限控制
+  - [ ] nacos-sdk-go
+    - [ ] [整体架构分析](./Nacos/nacos-sdk-go/整体架构分析.md)
   
 - K8S和Docker
   
