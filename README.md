@@ -1,11 +1,13 @@
 # Sivyer's Blog
 
 ### Introduction
+
 > 私人博客，用于记录个人知识及总结，是使用自己的语言进行描述的，不保证不存在语法错误或者知识错误。
 
 ### Java
 
 - JVM
+  
   - [x] [jvm内存区域](./jvm/2021-04-11-jvm内存.md)
   - [x] [垃圾回收算法](./jvm/2021-04-19-垃圾回收算法.md)
   - [x] [垃圾收集器](./jvm/2021-04-21-垃圾收集器.md)
@@ -16,11 +18,9 @@
   - [ ] 堆外内存
   - [ ] jvm内存模型
   - [ ] [aqs](./jvm/2021-05-27-aqs.md)
-  
+
 - jmh
-  
-  
-  
+
 - Redis
   
   - [x] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
@@ -35,9 +35,9 @@
   - [x] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
-  
-- RocketMq
 
+- RocketMq
+  
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
   - [ ] 架构解析
   - [ ] 分布式事务
@@ -47,12 +47,13 @@
   - [ ] 消息重试
   - [ ] 主从复制
   - [ ] 高可用设计
-  
+
 - Zookeeper
+  
   - [ ] 脑裂问题
   - [ ] 羊群效应
   - [ ] 分布式锁
-  
+
 - Kafka
 
 - mongodb
@@ -68,17 +69,17 @@
   - [ ] 游标cursor
   - [ ] 执行计划
   - [ ] 慢日志
-  
+
 - dubbo
   
   //TODO
-  
+
 - Spring
   
   - [ ] 事务监听器使用 - TransactionalEventListener
   - [x] [SpringBootApplication注解背后的秘密](./Spring/2021-05-25-SpringBootApplication背后的秘密.md)
   - [ ] [自动装配](./Spring/2021-05-25-自动装配.md)
-  
+
 - openresty
 
 - mybatis-plus (baomidou)
@@ -86,13 +87,13 @@
 - gRPC
   
   - [x] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
-  
+
 - protocol buffers
 
 - xxlJob
 
 - prometheus
-
+  
   - [x] [结合springboot、nacos学习prometheus](./prometheus/2022-01-20-结合springboot、nacos学习prometheus.md)
   - [ ] [go中的prometheus](./prometheus/2022-01-20-go中的prometheus.md)
 
@@ -100,8 +101,9 @@
   
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
   - [ ] [namespace和cgroup](./k8s/2022-01-10-NameSpace和Cgroup.md)    -- TODO
-  
+
 - Consul
+  
   - [ ] 安装
   - [ ] 使用Consul作为SpringCloud的注册发现服务-替换Euraka
   - [ ] 使用Consul作为SpringCloud的配置中心-替换SpringCloud Config
@@ -111,15 +113,16 @@
   - [ ] 尝试搭建Consul集群
   - [x] [与其他服务注册中心对比](./Consul/2021-05-18-各服务注册中心对比.md)
   - [ ] 与Fabio一起使用
-  
+
 - nacos
+  
   - [ ] [搭建nacos](./Nacos/2021-06-07-搭建nacos.md)
   - [ ] [nacos的相关概念](./Nacos/2021-06-07-nacos基本概念.md)
   - [ ] nacos与Spring cloud集成
   - [ ] nacos权限控制
   - [ ] nacos-sdk-go
     - [ ] [整体架构分析](./Nacos/nacos-sdk-go/整体架构分析.md)
-  
+
 - K8S和Docker
   
   - [x] [k8s有哪些组件](./k8s/2021-05-24-k8s有哪些组件.md)
@@ -127,29 +130,27 @@
   - [ ] [K8S开放接口](./k8s/2022-01-07-K8S开放接口.md)    // TODO CSI未完成
   - [x] [Pod](./k8s/2022-01-09-Pod.md)
   - [ ] [Node](./k8s/2022-01-14-Node.md)
-  
+
 - 一致性算法
+  
   - [x] [一致性协议总览](./一致性协议/2021-05-19-一致性协议总览.md)
   - [x] [Paxos协议](./一致性协议/2021-05-19-Paxos协议.md)
   - [x] [Raft协议](./一致性协议/2021-05-19-Raft协议.md)
   - [x] [ZAB协议](./一致性协议/2021-05-19-ZAB协议.md)
   - [x] [Gossip协议](./一致性协议/2021-05-22-Gossip协议.md)
-  
+
 - 分布式事务
+  
   - [x] [一致性](./分布式事务/2021-05-20-一致性.md)
   - [x] [2PC与3PC](./分布式事务/2021-05-20-2PC与3PC.md)
   - [ ] seata
     - [ ] [坑爹，tinyint被转换为布尔](./seata/记一次坑爹的线上bug - tinyint被转换为布尔.md)
-  
+
 - 其他
+  
   - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
   - [ ] dataX
-  
+
 - 书籍阅读
-
+  
   - [ ] [凤凰架构](./book/2021-10-12-凤凰架构.md)
-
-
-
-
-
