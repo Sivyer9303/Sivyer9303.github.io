@@ -8,7 +8,8 @@
 
 - JVM
 
-  - [X] [jvm内存区域](./jvm/2021-04-11-jvm内存.md)
+  - [jvm内存区域](./jvm/2021-04-11-jvm内存.md)
+
   - [X] [垃圾回收算法](./jvm/2021-04-19-垃圾回收算法.md)
   - [X] [垃圾收集器](./jvm/2021-04-21-垃圾收集器.md)
   - [ ] jvm错误排查手段及工具
@@ -131,6 +132,7 @@
 
   - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
   - [ ] dataX
+- golang学习之旅
   - [ ] 刷题规划
     - [ ] [数组](./算法/数组.md)
     - [ ] 链表
@@ -142,6 +144,27 @@
     - [ ] 贪心
     - [ ] 动态规划
     - [ ] 图
+  - [ ] golang源码阅读
+    - [ ] [http包](./golang/源码/http包.md)
+    - [ ] [bytes](./golang/源码/bytes.md)
+    - [ ] [condition](./golang/源码/condition.md)
+    - [ ] [io](./golang/源码/io包.md)
+    - [ ] [log](./golang/源码/log.md)
+    - [ ] [strconv](./golang/源码/strconv.md)
+    - [ ] [strings](./golang/源码/strings.md)
+    - [ ] [syncMap](./golang/源码/syncMap.md)
+    - [ ] [time](./golang/源码/time包.md)
+    - [ ] [strings](./golang/源码/time包.md)
+  - [ ] 框架学习
+    - [ ] gin
+    - [ ] nacos-sdk-go
+    - [ ] gorm
+    - [ ] grpc
+    - [ ] k8s
+  - [ ] 视频学习
+  - [ ] 参与开源
+    - [ ] nacos
+  - [ ] 面试八股文
 - 书籍阅读
 
   - [ ] [凤凰架构](./book/2021-10-12-凤凰架构.md)
