@@ -73,3 +73,53 @@ type NamingProxyDelegate struct {
 
 ##### httpClient
 
+是INamingProxy的实现类，主要用于使用http的方式去实现接口注册、接口注销等操作。
+
+```
+type NamingHttpProxy struct {
+   // 客户端信息
+   clientConfig      constant.ClientConfig
+   // server端信息
+   nacosServer       *nacos_server.NacosServer
+   // 心跳反应器，用于监听心跳
+   beatReactor       BeatReactor
+   serviceInfoHolder *naming_cache.ServiceInfoHolder
+}
+```
+
+###### beatReactor
+
+是和server进行心跳的反应器，主要是在1.0中使用，2.0中使用grpc，没有心跳了。
+
+```
+type BeatReactor struct {
+   beatMap             cache.ConcurrentMap
+   nacosServer         *nacos_server.NacosServer
+   beatThreadCount     int
+   beatThreadSemaphore *semaphore.Weighted
+   beatRecordMap       cache.ConcurrentMap
+   clientCfg           constant.ClientConfig
+   mux                 *sync.Mutex
+}
+```
+
+核心方法：
+
+1. AddBeatInfo 添加心跳
+
+   接收serviceName和beatinfo两个参数，serviceName用于生成key(根据serviceName+IP+端口生成)，key为BeatReactor中beatMap的key值，用于存储对应的beatInfo,暂未知道这个beatMap有何作用...
+
+   BeatInfo会包含instance中的基本信息，包括ip、端口、命名空间等信息。
+
+   1.1  根据key移除原有的beatMap中的beatInfo，
+
+   1.2  开启一个协程，不断发送心跳请求到server端，这个协程会根据beatInfo中的间隔请求，**可以通过设置beatInfo的state**，停止心跳协程。
+
+2. RemoveBeatInfo移除心跳
+
+   接收ServiceName+IP+端口生成key，**然后将对应的beatInfo的state改为停止**
+
+   
+
+   
+
