@@ -119,7 +119,34 @@ type BeatReactor struct {
 
    接收ServiceName+IP+端口生成key，**然后将对应的beatInfo的state改为停止**
 
-   
+###### serviceInfoHolder
 
-   
+  serviceInfo的持有者，会缓存serviceInfo和接受server发过来的service变更信息。
+
+```
+type ServiceInfoHolder struct {
+   // serviceinfo的缓存
+   ServiceInfoMap       cache.ConcurrentMap
+   // 是否在service为空时不进行更新本地缓存
+   updateCacheWhenEmpty bool
+   // 缓存目录，通过缓存文件的形式缓存service信息
+   cacheDir             string
+   // 在启动时不加载缓存，为false时，表示加载缓存
+   notLoadCacheAtStart  bool
+   // 订阅回调，用于在service发生变化时，执行定制操作
+   subCallback          *SubscribeCallback
+   // 更新时间map，记录缓存更新时间
+   UpdateTimeMap        cache.ConcurrentMap
+}
+```
+
+核心方法：
+
+1.ProcessService 解析service,解析完成会把service放入到serviceInfoMap中
+
+2.loadCacheFromDisk 从缓存文件中加载缓存，并放入到serviceInfoMap中去。
+
+3.RegisterCallback 注册回调函数
+
+4.DeregisterCallback取消回调函数注册
 
