@@ -144,9 +144,34 @@ type ServiceInfoHolder struct {
 
 1.ProcessService 解析service,解析完成会把service放入到serviceInfoMap中
 
-2.loadCacheFromDisk 从缓存文件中加载缓存，并放入到serviceInfoMap中去。
+2.loadCacheFromDisk 从缓存文件中加载缓存，并放入到serviceInfoMap中去
 
 3.RegisterCallback 注册回调函数
 
 4.DeregisterCallback取消回调函数注册
+
+###### SubscribeCallback
+
+注册回调器，用于注册一些在服务变动。
+
+```
+type SubscribeCallback struct {
+   // map，用于存储service和对应callback之间的关系
+   callbackFuncMap cache.ConcurrentMap
+   // 锁
+   mux             *sync.Mutex
+}
+```
+
+核心方法：
+
+1.AddCallbackFunc 添加回调方法到map中
+
+2.RemoveCallbackFunc 移除回调方法到map中
+
+3.ServiceChanged 服务发生变化时，触发回调
+
+
+
+##### httpGrpcClient
 
