@@ -175,3 +175,22 @@ type SubscribeCallback struct {
 
 ##### httpGrpcClient
 
+```go
+type NamingGrpcProxy struct {
+   // 客户端配置
+   clientConfig      constant.ClientConfig
+   // 服务端配置
+   nacosServer       *nacos_server.NacosServer
+   // rpc 客户端，用于发送请求
+   rpcClient         rpc.IRpcClient
+   // 时间监听器
+   eventListener     *ConnectionEventListener
+   // 服务信息持有者
+   serviceInfoHolder *naming_cache.ServiceInfoHolder
+}
+```
+
+grpc的代理类，其中rpcClient用于真正的和服务端发送请求。
+
+###### rpcClient
+
