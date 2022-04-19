@@ -194,3 +194,56 @@ grpc的代理类，其中rpcClient用于真正的和服务端发送请求。
 
 ###### rpcClient
 
+```go
+// IRpcClient 接口，定义的rpc client应该实现的方法，是grpc client的父类
+type IRpcClient interface {
+   connectToServer(serverInfo ServerInfo) (IConnection, error)
+   getConnectionType() ConnectionType
+   putAllLabels(labels map[string]string)
+   rpcPortOffset() uint64
+   GetRpcClient() *RpcClient
+}
+```
+
+//  grpc版本 rpc client
+
+```
+// grpc 版本的 rpc client实现
+type GrpcClient struct {
+   *RpcClient
+}
+```
+
+
+
+底层的client为RpcClient  -- TODO
+
+```
+type RpcClient struct {
+   // 名称
+   Name                        string
+   // 标签
+   labels                      map[string]string
+   // 当前连接
+   currentConnection           IConnection
+   // client状态
+   rpcClientStatus             RpcClientStatus
+   // 事件chan
+   eventChan                   chan ConnectionEvent
+   // 重连chan
+   reconnectionChan            chan ReconnectContext
+   // 连接事件监听器
+   connectionEventListeners    atomic.Value
+   // 上次活跃的时间
+   lastActiveTimeStamp         time.Time
+   // 执行的client,用于发送真正的请求
+   executeClient               IRpcClient
+   // nacos server信息
+   nacosServer                 *nacos_server.NacosServer
+   // request的处理器映射，不同的request对应不同的handler
+   serverRequestHandlerMapping map[string]ServerRequestHandlerMapping
+   mux                         *sync.Mutex
+   clientAbilities             rpc_request.ClientAbilities
+   Tenant                      string
+}
+```
