@@ -214,7 +214,11 @@ type GrpcClient struct {
 }
 ```
 
+GrpcClient只有一个属性，就是RpcClient，其中Rpcclient中的excuteClient是真正执行请求的client，这里就是GrpcClient自己。
 
+核心方法：
+
+1.连接grpc服务器 
 
 底层的client为RpcClient  -- TODO
 
@@ -224,7 +228,7 @@ type RpcClient struct {
    Name                        string
    // 标签
    labels                      map[string]string
-   // 当前连接
+   // 当前连接,可以在start的时候进行连接或者进行重连的时候连接,client同时只能持有一个connection
    currentConnection           IConnection
    // client状态
    rpcClientStatus             RpcClientStatus
