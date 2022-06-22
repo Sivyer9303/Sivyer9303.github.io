@@ -19,7 +19,9 @@
   - [ ] 堆外内存
   - [ ] jvm内存模型
   - [ ] [aqs](./jvm/2021-05-27-aqs.md)
+
 - jmh
+
 - Redis
 
   - [X] [Redis数据结构](./Redis/2021-04-12-Redis数据结构.md)
@@ -34,6 +36,7 @@
   - [X] [Cluster slot](./Redis/2021-05-31-clusterslot.md)
   - [ ] 分布式锁
   - [ ] redis限流
+
 - RocketMq
 
   - [ ] [基本概念](./RocketMq/2021-4-16-rocketmq基本概念.md)
@@ -45,44 +48,61 @@
   - [ ] 消息重试
   - [ ] 主从复制
   - [ ] 高可用设计
+
 - Zookeeper
 
   - [ ] 脑裂问题
   - [ ] 羊群效应
   - [ ] 分布式锁
+
 - Kafka
+
 - mongodb
+
 - Es
+
 - Netty
+
 - benchmark
+
 - Mysql
 
   - [ ] 游标cursor
   - [ ] 执行计划
   - [ ] 慢日志
+
 - dubbo
 
   //TODO
+
 - Spring
 
   - [ ] 事务监听器使用 - TransactionalEventListener
   - [X] [SpringBootApplication注解背后的秘密](./Spring/2021-05-25-SpringBootApplication背后的秘密.md)
   - [ ] [自动装配](./Spring/2021-05-25-自动装配.md)
+
 - openresty
+
 - mybatis-plus (baomidou)
+
 - gRPC
 
   - [X] [gRPC简介](./gRpc/2021-05-12-gRpc.md)
+
 - protocol buffers
+
 - xxlJob
+
 - prometheus
 
   - [X] [结合springboot、nacos学习prometheus](./prometheus/2022-01-20-结合springboot、nacos学习prometheus.md)
   - [ ] [go中的prometheus](./prometheus/2022-01-20-go中的prometheus.md)
+
 - linux
 
   - [ ] [Linux命令](./linux/2021-05-12-Linux命令.md)
   - [ ] [namespace和cgroup](./k8s/2022-01-10-NameSpace和Cgroup.md)    -- TODO
+
 - Consul
 
   - [ ] 安装
@@ -94,6 +114,7 @@
   - [ ] 尝试搭建Consul集群
   - [X] [与其他服务注册中心对比](./Consul/2021-05-18-各服务注册中心对比.md)
   - [ ] 与Fabio一起使用
+
 - nacos
 
   - [ ] [搭建nacos](./Nacos/2021-06-07-搭建nacos.md)
@@ -105,6 +126,7 @@
   - [ ] nacos是如何实现配置自动刷新的
     - [ ] NacosContextRefresher - nacos自动更新的入口
     - [ ] RefreshEvent - spring cloud 热更新入口
+
 - K8S和Docker
 
   - [X] [k8s有哪些组件](./k8s/2021-05-24-k8s有哪些组件.md)
@@ -115,6 +137,7 @@
   - [ ] [垃圾收集](./k8s/2022-02-24-垃圾收集.md)
   - [X] [控制器](./k8s/2022-03-17-控制器.md)
   - [ ] HPA
+
 - 一致性算法
 
   - [X] [一致性协议总览](./一致性协议/2021-05-19-一致性协议总览.md)
@@ -122,16 +145,19 @@
   - [X] [Raft协议](./一致性协议/2021-05-19-Raft协议.md)
   - [X] [ZAB协议](./一致性协议/2021-05-19-ZAB协议.md)
   - [X] [Gossip协议](./一致性协议/2021-05-22-Gossip协议.md)
+
 - 分布式事务
 
   - [X] [一致性](./分布式事务/2021-05-20-一致性.md)
   - [X] [2PC与3PC](./分布式事务/2021-05-20-2PC与3PC.md)
   - [ ] seata
     - [ ] [坑爹，tinyint被转换为布尔](./seata/记一次坑爹的线上bug - tinyint被转换为布尔.md)
+
 - 其他
 
   - [ ] [selector-epoll](./others/2021-05-26-SelectPoll模型.md)
   - [ ] dataX
+
 - golang学习之旅
   - [ ] 刷题规划
     - [ ] [数组](./算法/数组.md)
@@ -159,6 +185,7 @@
     - [ ] [nocopy](./golang/源码/nocopy.md)
     - [ ] [数组和slice](./golang/源码/数组和slice.md)
     - [ ] [堆内存管理](./golang/源码/堆内存管理.md)
+    - [ ] [map](./golang/源码/map.md)
   - [ ] 框架学习
     - [ ] gin
     - [ ] nacos-sdk-go
@@ -171,6 +198,19 @@
     - [ ] 自己做一个小项目 - 尝试写个提醒器，到某个时间就自动发送提醒(钉钉、邮件、微信提醒等),最好搞个UI界面
       - [ ] [tellMeWhen](./project/tellMeWhen)
   - [ ] 面试八股文
+
+- 计划
+
+  - [ ] 第一阶段
+    - [ ] 简历
+    - [ ] java八股文
+    - [ ] golang八股文
+  - [ ] 第二阶段
+    - [ ] 找公司练手
+    - [ ] 针对公司进行简历编写
+  - [ ] 第三阶段
+    - [ ] 租房、搬家
+
 - 书籍阅读
 
   - [ ] [凤凰架构](./book/2021-10-12-凤凰架构.md)
